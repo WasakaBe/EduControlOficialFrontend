@@ -1,0 +1,20 @@
+*{ margin: 0;padding: 0; box-sizing: border-box;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+:root{
+  --fondo: rgba(255, 250, 250, 0.833) ;
+  --fondoNavbar:#222 ;
+  --fondoNegro :  rgba(0, 0, 0, 0.46);
+  --letras_logos: rgb(37, 125, 37);
+  --sombraNegro: rgba(0, 0, 0, 0.745) ;
+  --sombraBlanca : rgba(233, 222, 222, 0.41);
+  --borderBlack : #222 ;
+  --blanco: white ;
+  --boxGris: #505050;
+  --letraNegro : black ;
+  --fb: blue;
+  --tw: rgb(55, 144, 193);
+  --yt: rgb(207, 61, 61);
+  --ins: purple ;
+  --greenfuerte:  rgb(11, 52, 11);
+  --orange: rgba(192, 82, 14, 0.797);
+  --alert : rgb(128, 0, 0);
+}

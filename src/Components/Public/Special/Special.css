@@ -1,0 +1,158 @@
+.container-special{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../../Image/fondo2.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  margin-top: 10px;
+}
+.special-ctn{
+  background-color:var(--fondoNegro) ;
+  height: 100vh;
+  width: 100%;
+  padding: 20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+  .circle-special{
+   width: 300px;
+   height: 300px;
+   background-color: var(--blanco);
+   box-shadow: 2px 2px 2px 21px var(--sombraBlanca);
+   border-radius: 50%;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+  padding: 20px;
+  margin-bottom: 100px;
+  }
+  .circle-special h3{
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+  }
+  .circle-special h2{
+    font-size: 50px;
+    font-weight: 500;
+  }
+  .circle-special p{
+    color: var(--sombraNegra);
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    padding: 15px;
+    width: 280px;
+  }
+ .logo-special{
+  height: auto;
+ }
+ .logo-special img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px 11px var(--sombraBlanca);
+  margin-left:20px;
+ } 
+ .logo-special  img:hover{
+  transform: scale(1.3); 
+  transition: transform 0.3s ease;
+  box-shadow: 1px 1px 1px 1px var(--sombraNegra);
+  border: 3px solid var(--borderBlack);
+ }
+ /*LOGOS DE LAS CARRERAS*/
+ .logo-special img:nth-child(1) {
+  position: relative;
+  z-index: 1000;
+}
+.logo-special .logo-admin img:nth-child(1) {
+  top: 200px;
+  right:450px;
+}
+.logo-special .logo-agricola img:nth-child(1) {
+  top: 230px;
+  right:470px;
+}
+.logo-special .logo-agro img:nth-child(1) {
+  top: 260px;
+  right:420px;
+}
+.logo-special .logo-alim img:nth-child(1) {
+  top: 240px;
+  right:300px;
+}
+.logo-special .logo-cont img:nth-child(1) {
+  top: 140px;
+  right:140px;
+}
+.logo-special .logo-des img:nth-child(1) {
+  top: -50px;
+  right:20px;
+}
+.logo-special .logo-ofit img:nth-child(1) {
+  top: -290px;
+  right:-30px;
+}
+.logo-special .logo-prog img:nth-child(1) {
+  top: -530px;
+  right:0;
+}
+ /*dates*/
+ .dates-admin, .dates-agricola , .dates-agro, .dates-alim, .dates-cont , .dates-des , .dates-ofit, .dates-prog{
+  display: none;
+ }
+
+ @media screen and(max-width:900px) {
+  .container-special{
+    width: 100%;
+    padding: 20px;
+  }
+  .logo-special{
+    padding: 20px;
+   }
+   .logo-special img{
+    padding: 30px;
+   } 
+ }
+
+ @media (max-width:550px) {
+  .container-special{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  .special-ctn{
+    padding: 20px;
+    display:block;
+  }
+  .circle-special{
+    width: 100%;
+    height: auto;
+    box-shadow:none;
+    border-radius: 1%;
+    display: flex;
+    flex-direction: column;
+   padding: auto;
+   background-color:transparent;
+   }
+   .logo-special img{
+    width: 100px;
+    height: 100px;
+    border-radius: 1%;
+    box-shadow:none;
+    margin-left:20px;
+   } 
+   .circle-special h3{
+   padding: auto;
+   color: white;
+  }
+  .circle-special h2{
+    color: white;
+  }
+  .circle-special p{
+    color: white;
+    width: 100%;
+  }
+ }

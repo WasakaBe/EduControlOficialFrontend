@@ -1,0 +1,108 @@
+.container-navbar{
+  width: 100%;
+  background-color:var(--fondoNavbar);
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px;
+  align-items: center;
+  z-index: 1000;
+}
+.navbar-list {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+.navbar-list img{
+   width: 80px;
+   padding: 10px 0 0 10px;
+   height: auto; 
+  }
+.navbar-list span{
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-left: 10px;
+  color:var(--blanco);
+}
+.navbar-list ul{
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+.navbar-list ul li {
+  position: relative;
+}
+.navbar-list ul li a{
+  text-decoration: none;
+  color: var(--blanco);
+  font-size: 1.4em;
+  margin-left: 6px;
+  transition: transform 0.4s ease;
+}
+.navbar-list ul li a:hover{
+  padding: 10px ;
+}
+.navbar-sign{
+  display: flex;
+  align-items: center;
+}
+.navbar-sign span{
+  font-size: 2em;
+}
+.list-signup a ion-icon{
+  width: 60px;
+  height: 50px;
+}
+/*ICON DE USER LOGIN*/
+.navbar-list ul li ul{
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 170px;
+  background: var(--boxGris);
+  display: none;
+}
+/*USER REGISTER*/
+.navbar-list ul li .list-li2{
+  position: absolute;
+  top:100%;
+  right: 20px;
+  width: 170px;
+  background: var(--boxGris);
+  display: none;
+  cursor: pointer;
+}
+/*SERVICE NAVBAR*/
+.navbar-list ul li .list-li3{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 160px;
+  background: var(--boxGris);
+  display: none;
+}
+.navbar-list ul li:hover .list-li3 {
+  display: block;
+}
+/*TRAMITES*/
+.navbar-list ul li .list-li4{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  background: var(--boxGris);
+  display: none;
+}
+.navbar-list ul li .list-li3:hover .list-li4 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 160px;
+}

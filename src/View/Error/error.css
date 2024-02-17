@@ -1,0 +1,51 @@
+.error-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000; /* Fondo negro */
+}
+
+
+@keyframes starsMovement {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+.error-content {
+  text-align: center;
+  z-index: 1;
+  color: #fff; /* Texto blanco */
+}
+
+.error-title {
+  font-size: 6em;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.error-message {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+  animation: fadeInUp 1s ease-in-out 0.5s;
+}
+
+.error-content button{
+  padding: 10px 60px;
+  border: none;
+  background-color: white;
+}
+.error-content button:hover{
+  z-index: 2;
+  padding: 14px 70px;
+  background-color: #461717ac;
+  border-radius: 10px;
+  color: white;
+  border:2px solid white;
+}

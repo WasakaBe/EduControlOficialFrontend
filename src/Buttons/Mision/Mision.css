@@ -1,0 +1,44 @@
+.btn button{
+  background-color:var(--letras_logos);
+  color:var(--blanco);
+  padding: 5px 20px;
+  border: none;
+  cursor: pointer;
+}
+.modal-exit{
+  padding: 1% 1em;
+  background-color: var(--alert);
+  cursor: pointer;
+}
+.modal-exit:hover{
+  background-color: rgb(213, 31, 31);
+}
+.modal-mision{
+  text-align: center;
+  font-size: 2em;
+}
+.modal-texto-mision{
+  font-size: 1.2em;
+  padding: 10px 20px;
+}
+@media screen and (max-width: 900px) {
+  /* Estilos responsivos hasta 900px */
+  .btn button {
+    padding: 3px 15px;
+    font-size: 0.8em;
+  }
+
+  .modal-exit {
+    padding: 2% 1em;
+    font-size: 0.8em;
+  }
+
+  .modal-mision {
+    font-size: 1.5em;
+  }
+
+  .modal-texto-mision {
+    font-size: 1em;
+    padding: 5px 10px;
+  }
+}

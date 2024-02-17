@@ -1,0 +1,55 @@
+.formulario1 {
+  max-width: 100%;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid var(--fondo);
+  border-radius: 5px;
+  position: relative;
+  transition: opacity 0.5s;
+}
+.formulario1 label {
+  display: block;
+  margin-bottom: 10px;
+}.formulario1 input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--fondo);
+  border-radius: 3px;
+}
+.formulario1 [style*="background-color: green"] {
+  background-color: var(--fondo);
+}
+
+.formulario1 [style*="background-color: red"] {
+  background-color: var(--yt);
+}
+.formulario1-password label,
+.formulario1-password input {
+  display: none;
+}
+
+.formulario1-password .formulario1 {
+  opacity: 0;
+}
+.formulario1-password .formulario1 {
+  display: block;
+  opacity: 1;
+}
+.formulario1-email .formulario1 {
+  display: block;
+  opacity: 1;
+}
+.formulario1 button {
+  background-color:var(--tw);
+  color: var(--blanco);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.formulario1 button:hover {
+  background-color:var(--fb);
+}

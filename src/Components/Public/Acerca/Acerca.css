@@ -1,0 +1,63 @@
+.container-acerca{
+  width: 100%;
+  height:auto;
+  position: relative;
+  margin-bottom: 20px;
+}
+.container-acerca h1{
+  font-size: 4em;
+  padding: 40px;
+  text-align: center;
+}
+.sub-acerca{
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding:5px;
+}
+
+.acerca-texto{
+  width: 100%;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.acerca-texto h2{
+  text-align: left;
+  margin-bottom: 10px;
+}
+.acerca-texto p{
+  text-align: left;
+  font-size: 1.3em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-bottom: 20px;
+}
+@media (max-width: 800px) {
+  .container-acerca {
+    height: auto;
+    padding: 20px;
+  }
+  
+  .container-acerca h1 {
+    font-size: 3em;
+    padding: 20px;
+  }
+  
+  .sub-acerca {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .acerca-texto {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .acerca-texto h2,
+  .acerca-texto p {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
