@@ -1,0 +1,120 @@
+.header{
+ position: relative;
+  background-color:var(--fondoNavbar);
+  display: flex;
+  justify-content: space-between;
+  height: 20vh;
+  width: 100%;
+  z-index: 1000;
+  align-items: center;
+}
+.navbar-list {
+ display: flex;
+ align-items: center;
+ padding: 10px;
+ margin: 10px;
+ z-index: 1000;
+}
+.navbar-list img{
+ width: 80px;
+ padding: 10px 0 0 10px;
+ height: auto; 
+}
+.navbar-list span{
+ font-weight: bold;
+ font-size: 1.5em;
+ margin-left: 10px;
+ color:var(--blanco);
+}
+.header .logo{
+ font-weight: bolder;
+ text-decoration: none;
+}
+.header .nav ul{
+ list-style: none;
+ z-index: 1000;
+}
+.header .nav ul li{
+ position: relative;
+ float: left;
+ z-index: 1000;
+}
+.header .nav ul li a{
+ padding: 20px;
+ font-size: 14px;
+ color:var(--blanco);
+ text-decoration: none;
+ display: block;
+ z-index: 1000;
+}
+.header .nav ul li a:hover{
+ background-color:white;
+ color: rgb(8, 72, 57);
+}
+
+.header .nav ul li ul{
+ position: absolute;
+ left: 0;
+ width: 200px;
+ background-color:var(--fondoNavbar);
+ display: none;
+ z-index: 1000;
+}
+.header .nav ul li ul li{
+ width: 100%;
+ border-top: 1px solid rgba(255, 255, 255, 0.365);
+}
+.header .nav ul li ul li ul{
+ left: 200px;
+ top: 0;
+}
+.header .nav ul li:focus-within > ul,
+.header .nav ul li:hover > ul{
+ display: initial;
+ z-index: 1000;
+}
+#menu-bar{
+ display: none;
+}
+.header label{
+ font-size: 30px;
+ color: #ffffff;
+ cursor: pointer;
+ display: none;
+}
+@media (max-width:930px) {
+  .header{
+   padding: 20px;
+  }
+  .header label{
+   display: initial;
+  }
+  .header .nav{
+   position: absolute;
+   top: 100%;
+   left: 0;
+   right: 0;
+   background-color:var(--fondoNavbar);
+   display: none;
+   z-index: 1000;
+   scroll-behavior: smooth;
+  }
+  .header .nav ul li{
+   width: 100%;
+  }
+  .header .nav ul li ul{
+   position: relative;
+   width: 100%;
+  }
+  .header .nav ul li ul li{
+   background-color:var(--fondoNavbar);
+   z-index: 1000;
+  }
+  .header .nav ul li ul li ul{
+   width: 100%;
+   left: 0;
+  }
+  #menu-bar:checked ~ .nav{
+   display: initial;
+  }
+}

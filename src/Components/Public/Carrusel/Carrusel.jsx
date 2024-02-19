@@ -3,8 +3,9 @@ import React, { useState, useEffect } from 'react';
 import './Carrusel.css';
 import { panel_cbta, dance, alumns_docent } from '../../../Image';
 
+const slides = [panel_cbta, dance, alumns_docent];
+
 export default function Carrusel() {
-  const slides = [panel_cbta, dance, alumns_docent];
   const [slideIndex, setSlideIndex] = useState(0);
 
   const nextSlide = () => {
@@ -30,11 +31,10 @@ export default function Carrusel() {
       <div className='carousel'>
         {slides.map((slide, index) => (
           <img
-            key={index}
+            key={slide}
             src={slide}
             alt={`imagen ${index + 1}`}
             style={{ display: index === slideIndex ? 'block' : 'none' }}
-          
           />
         ))}
       </div>

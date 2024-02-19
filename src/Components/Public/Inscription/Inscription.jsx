@@ -1,9 +1,8 @@
 import React from 'react';
 import './Inscription.css';
-import Intro from '../../../Constants/Intro/Intro';
-
+import videoFile from '../../../video/001.mp4';
 export default function Inscription() {
-
+  const vidRef = React.useRef();
   return (
     <div className='container-inscription'>
 
@@ -29,7 +28,16 @@ export default function Inscription() {
                       <p className='p-periodo'>El Horario de atención es de <span>9:00 a.m. a 14:00 p.m.</span></p>
           </div>
               <div className='subt-section-video'>
-                  <Intro/>
+           
+                  <video
+                    ref={vidRef}
+                    src={videoFile}
+                    type="video/mp4"
+                    loop
+                    controls={true}
+                    muted
+                  />
+                  
               </div>
         </div>
     </div>

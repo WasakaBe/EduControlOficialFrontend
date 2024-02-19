@@ -1,26 +1,23 @@
 .carousel-container{
   width: 100%;
   height:80vh;
+  overflow: hidden;
 }
 .carousel{
   width: 100%;
   height: 80vh;
+  overflow: hidden;
 }
 
 .carousel img{
-  width: 100%; /* Ajusta el tamaño deseado para las imágenes */
+  width: 100%; 
   height: 100%; 
   object-fit: cover;
-}
-.buttons{
-  text-align: left;
-  position: relative;
-  bottom: 40px;
 }
 .buttons button{
   border: 1px solid var(--boxGris);
   background-color: var(--blanco);
-  margin-left: 10px;
+
 }
 .buttons button ion-icon{
   width: 25px;
@@ -28,13 +25,17 @@
   color: var(--letraNegro);
   cursor: pointer;
 }
-@media (max-width:900px) {
+@media (max-width:940px) {
   .carousel-container{
     width: 100%;
-    height:auto;
+  }
+  .carousel{
+    width: 100%;
+    height: 40vh;
   }
   .carousel img{
     width: 100%;
-    height: 350px;
+    height: 100%;
+    object-fit: cover;
   }
 }

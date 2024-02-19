@@ -65,7 +65,7 @@
  /*LOGOS DE LAS CARRERAS*/
  .logo-special img:nth-child(1) {
   position: relative;
-  z-index: 1000;
+  z-index: 10;
 }
 .logo-special .logo-admin img:nth-child(1) {
   top: 200px;

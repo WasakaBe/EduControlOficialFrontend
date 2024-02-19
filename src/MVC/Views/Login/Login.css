@@ -146,3 +146,14 @@
 #password-form .button3:hover {
   background-color: #45a049;
 }
+@media (max-width: 900px) {
+  .form-container {
+    max-width: 90%; /* Ajusta el porcentaje según tus necesidades */
+  }
+
+  .input-field {
+    max-width: 100%;
+  }
+
+  /* Otros estilos específicos para pantallas más pequeñas aquí ... */
+}

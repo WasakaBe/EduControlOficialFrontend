@@ -106,3 +106,21 @@
   top: 0;
   left: 160px;
 }
+
+/* Consultas de medios para tamaños de pantalla específicos */
+@media screen and (max-width: 600px) {
+  .container-navbar {
+    height: 20vh; /* Restaurar la altura para pantallas más grandes */
+    flex-direction: row; /* Restaurar la disposición de fila para pantallas más grandes */
+    justify-content: space-between; /* Restaurar la justificación del espacio para pantallas más grandes */
+  }
+
+  .navbar {
+    flex-direction: row; /* Restaurar la disposición de fila para pantallas más grandes */
+    align-items: center; /* Restaurar la alineación de elementos en el centro para pantallas más grandes */
+  }
+
+  .navbar-list ul {
+    flex-direction: row; /* Restaurar la disposición de fila para pantallas más grandes */
+  }
+}

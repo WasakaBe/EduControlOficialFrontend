@@ -8,6 +8,10 @@ export default function PanelCredencial() {
                 <CredentialBlue/>
                 <CredentialRed/>
         </div>
+        <div className='section-credential'>
+                <CredentialBlue/>
+                <CredentialRed/>
+        </div>
     </div>
   )
 }

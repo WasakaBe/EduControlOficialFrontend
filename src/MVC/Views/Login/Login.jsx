@@ -1,7 +1,7 @@
 // eslint-disable-next-line 
 import React, { useState } from 'react';
 import './Login.css';
-import { Footer, Navbar } from '../../../Components/Public';
+import { Footer, Navbar2 } from '../../../Components/Public';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { Breadcrumbs,Api } from '../../../Constants';
@@ -144,7 +144,7 @@ export default function Login() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar2 />
       <div className='flex container mx-auto justify-center'>
         <Breadcrumbs path={'Iniciar Sesión'} />
       </div>

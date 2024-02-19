@@ -1,11 +1,12 @@
 import React, { useState, useEffect ,useRef} from 'react';
-import { Footer, Navbar } from '../../../../Components/Public';
+import { Footer, Navbar2 } from '../../../../Components/Public';
 import { useNavigate } from 'react-router-dom';
 import { Breadcrumbs, Api } from '../../../../Constants';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNombreValidation,useApellidoPaternoValidation,useApellidoMaternoValidation,useEdadValidation,useCorreoValidation,useContrasenaValidation,useNumeroControlValidation,useTelefonoValidation,useSeguroSocialValidation,useCurpValidation,useAceptaTerminosValidation } from '../../../../Validation';
 import ReCAPTCHA from 'react-google-recaptcha';
+import zxcvbn from 'zxcvbn';
 
 
 function RegisterAlumn() {
@@ -26,7 +27,8 @@ const [sexo, setSexo] = useState('');
 const [seccionActual, setSeccionActual] = useState(1);
 const [captchaValido, cambiarEstado] = useState(null);
 const captcha = useRef(null);
-
+ // Estado para almacenar la puntuación de la contraseña
+ const [passwordScore, setPasswordScore] = useState(0);
 
 const onChangeCaptcha = () => {
   if (captcha.current.getValue()) {
@@ -37,6 +39,7 @@ const onChangeCaptcha = () => {
     cambiarEstado(false);
   }
 };
+
 
 
   useEffect(() => {
@@ -258,6 +261,13 @@ const onChangeCaptcha = () => {
     return false; // Indica que la CURP no existe
   };
 
+  const handlePasswordChange = (event) => {
+    const newPassword = event.target.value;
+    const result = zxcvbn(newPassword);
+    setPasswordScore(result.score);
+    handleContrasenaChange(event); // Llama a la función de validación original
+  };
+
   const handleRegistro = async (event) => {
     event.preventDefault();
     
@@ -357,7 +367,7 @@ const onChangeCaptcha = () => {
 
   return (
     <div>
-      <Navbar />
+      <Navbar2 />
       <div className='flex container mx-auto justify-center'>
         <Breadcrumbs path={'Registro de Alumno'} />
       </div>
@@ -440,7 +450,7 @@ const onChangeCaptcha = () => {
                   type='password'
                   placeholder='Example#123'
                   value={contrasena}
-                  onChange={handleContrasenaChange}
+                  onChange={handlePasswordChange}
                   style={{ borderColor: contrasenaValida ? 'green' : 'red' }}
                 />
                 {!contrasenaValida && (
@@ -448,6 +458,11 @@ const onChangeCaptcha = () => {
                     La contraseña debe tener al menos 8 caracteres, incluyendo al menos una mayúscula, una minúscula, un número y un carácter especial.
                   </p>
                 )}
+                   {/* Barra de progreso basada en la puntuación de zxcvbn */}
+          <div className='password-strength'>
+            <progress value={passwordScore} max='2' />
+            <p>Fortaleza: {['Muy débil', 'Débil', 'Moderada', 'Fuerte', 'Muy fuerte'][passwordScore]}</p>
+          </div>
                 <div className='div-button'>
                   <button type="button" onClick={manejarSeccionAnterior}>
                     Anterior

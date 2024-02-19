@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Navbar, Footer } from '../../../Components/Public';
+import {  Footer, Navbar2 } from '../../../Components/Public';
 import './RegisterSelection.css'
 import {Breadcrumbs} from '../../../Constants'
 export default function RegisterSelection() {
@@ -27,7 +27,7 @@ export default function RegisterSelection() {
   };
   return (
     <div>
-      <Navbar />
+      <Navbar2 />
       <div className='flex container mx-auto justify-center'>
         <Breadcrumbs path={'Registro de Seleccion'} />
       </div>
