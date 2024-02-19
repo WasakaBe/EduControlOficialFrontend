@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cebcfee1.css",
-    "main.js": "/static/js/main.bced9a5f.js",
+    "main.css": "/static/css/main.1985a39a.css",
+    "main.js": "/static/js/main.1bd341f4.js",
     "static/js/787.4e0653a0.chunk.js": "/static/js/787.4e0653a0.chunk.js",
     "static/media/001.mp4": "/static/media/001.7b3443fb4ea8eec5982b.mp4",
     "static/media/4955888.jpg": "/static/media/4955888.eefbd3f04e3c88225c23.jpg",
@@ -11,8 +11,8 @@
     "static/media/DGETAyCM.png": "/static/media/DGETAyCM.f28d7b1bed1cc6703d84.png",
     "static/media/SEP.png": "/static/media/SEP.4e16cdaab535b60aa4df.png",
     "static/media/voleibol-femenil.jpg": "/static/media/voleibol-femenil.4774adac6eeb3cbc3055.jpg",
+    "static/media/panel-cbta.png": "/static/media/panel-cbta.50403ddbb4cf1155c577.png",
     "static/media/atletismo-femenil.jpg": "/static/media/atletismo-femenil.5ee06158934649a1cda1.jpg",
-    "static/media/panel-cbta.png": "/static/media/panel-cbta.51d5a205d2f127a1da57.png",
     "static/media/cbta-Programación.jpg": "/static/media/cbta-Programación.094bd4a1d07f3a53633a.jpg",
     "static/media/alumns_docente_cbta.jpg": "/static/media/alumns_docente_cbta.0831bf2f0d35957cd3a6.jpg",
     "static/media/alumnas_dance.jpg": "/static/media/alumnas_dance.ab3c05cef24c9a57dd90.jpg",
@@ -20,6 +20,7 @@
     "static/media/exampleGIRL2.jpg": "/static/media/exampleGIRL2.0dbffe765e16fe27182b.jpg",
     "static/media/varonil-futbol.jpg": "/static/media/varonil-futbol.7fa4387d4af09de7018a.jpg",
     "static/media/fondo3.jpg": "/static/media/fondo3.29d2452c2f4e3da66b4b.jpg",
+    "static/media/137_31927563_2.jpg": "/static/media/137_31927563_2.97c6aa036e5c8b1c6b23.jpg",
     "static/media/exampleGIRL.jpg": "/static/media/exampleGIRL.2127397c70bc39215934.jpg",
     "static/media/cbta-Agricola.jpg": "/static/media/cbta-Agricola.8bbf33ba4aba30f59caf.jpg",
     "static/media/cbta-Administración.jpg": "/static/media/cbta-Administración.ff0c74a32a6b23d77d58.jpg",
@@ -31,7 +32,6 @@
     "static/media/fondo2.jpg": "/static/media/fondo2.6963f02f871b6f242d48.jpg",
     "static/media/logo_educacion.png": "/static/media/logo_educacion.586861cd4297eab4be25.png",
     "static/media/basketball2.jpg": "/static/media/basketball2.c1a857841fe43976b78b.jpg",
-    "static/media/fondoRed.jpg": "/static/media/fondoRed.0e1b428e768969b02de0.jpg",
     "static/media/fondoazul.jpg": "/static/media/fondoazul.d91f6a07acfb2a17e8cb.jpg",
     "static/media/musica2.jpg": "/static/media/musica2.a49453f75b1e5ccbdace.jpg",
     "static/media/dance2.jpg": "/static/media/dance2.4e335bb5d466dd1b5f96.jpg",
@@ -46,12 +46,12 @@
     "index.html": "/index.html",
     "static/media/person-circle-outline.svg": "/static/media/person-circle-outline.e119b97e85d8b06ca50680ae00120cfd.svg",
     "static/media/person-add-outline.svg": "/static/media/person-add-outline.62069cf68a9b19ae0f654ebcfb250dc0.svg",
-    "main.cebcfee1.css.map": "/static/css/main.cebcfee1.css.map",
-    "main.bced9a5f.js.map": "/static/js/main.bced9a5f.js.map",
+    "main.1985a39a.css.map": "/static/css/main.1985a39a.css.map",
+    "main.1bd341f4.js.map": "/static/js/main.1bd341f4.js.map",
     "787.4e0653a0.chunk.js.map": "/static/js/787.4e0653a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cebcfee1.css",
-    "static/js/main.bced9a5f.js"
+    "static/css/main.1985a39a.css",
+    "static/js/main.1bd341f4.js"
   ]
 }
