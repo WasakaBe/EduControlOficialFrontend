@@ -9,6 +9,7 @@ import { useTelefonoValidation } from "./PhoneChange";
 import { useSeguroSocialValidation } from "./SocialSecureChange";
 import { useCurpValidation } from "./CurpChange";
 import { useAceptaTerminosValidation } from "./TerminosChange";
+import { useFechaNacimientoValidation } from "./FechaChange";
 export{
-  useNombreValidation,useApellidoPaternoValidation,useApellidoMaternoValidation,useEdadValidation,useCorreoValidation,useContrasenaValidation,useNumeroControlValidation,useTelefonoValidation,useSeguroSocialValidation,useCurpValidation,useAceptaTerminosValidation,
+  useNombreValidation,useApellidoPaternoValidation,useApellidoMaternoValidation,useEdadValidation,useCorreoValidation,useContrasenaValidation,useNumeroControlValidation,useTelefonoValidation,useSeguroSocialValidation,useCurpValidation,useAceptaTerminosValidation,useFechaNacimientoValidation,
 }

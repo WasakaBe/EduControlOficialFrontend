@@ -8,7 +8,7 @@ import Error400 from '../View/Error/error400';
 import Error404 from '../View/Error/404';
 import Error500 from '../View/Error/error500';
 import RegisterAdmin2 from '../MVC/Views/RegisterTypes/RegisterAdmin/RegisterAdmin2';
-
+import RegisterAlumn2 from '../MVC/Views/RegisterTypes/RegisterAlumn/RegisterAlumn2';
 import { Login,RegisterSelection,RegisterAdmin,RegisterAlumn,RegisterDocent,RegisterDocentCE,RegisterFamily,ForgoutPassword,ForgoutToken,ForgoutUpdate } from '../MVC';
 import { CulturalArte,CulturalAtletismo, CulturalBasketball,CulturalCanto,CulturalChess,CulturalDance,CulturalSoccer,CulturalVoleibol } from '../Sections';
 
@@ -28,6 +28,7 @@ export default function AppRoutes(){
             <Route path="/RegisterAdmin" element={<RegisterAdmin/>} />
             <Route path="/RegisterAdmin2" element={<RegisterAdmin2/>} />
             <Route path="/RegisterAlumn" element={<RegisterAlumn/>} />
+            <Route path="/RegisterAlumn2" element={<RegisterAlumn2/>} />
             <Route path="/RegisterDocent" element={<RegisterDocent/>} />
             <Route path="/RegisterDocentCE" element={<RegisterDocentCE/>} />
             <Route path="/RegisterFamily" element={<RegisterFamily/>} />

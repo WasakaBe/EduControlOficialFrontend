@@ -12,6 +12,7 @@ export default function PanelCredencial() {
                 <CredentialBlue/>
                 <CredentialRed/>
         </div>
+  
     </div>
   )
 }

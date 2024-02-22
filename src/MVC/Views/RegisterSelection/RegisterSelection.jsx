@@ -15,7 +15,7 @@ export default function RegisterSelection() {
     switch (selectedUserType) {
     
       case 'alumno':
-        history('/RegisterAlumn');
+        history('/RegisterAlumn2');
         break;
       case 'familiar':
         history('/RegisterFamily');

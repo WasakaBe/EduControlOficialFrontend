@@ -10,7 +10,7 @@ export default function Navbar2() {
           <span>EduControl</span>
         </div>
          <input type='checkbox' id='menu-bar'/>
-         <label for='menu-bar'><ion-icon name="grid"></ion-icon></label>
+         <label htmlFor='menu-bar'><ion-icon name="grid"></ion-icon></label>
 
         <div className='nav'>
            <ul>

@@ -20,7 +20,7 @@ export default function Login() {
   const [validPassword, setValidPassword] = useState(true);
   const [loginAttempts, setLoginAttempts] = useState(0);
   const [loginError, setLoginError] = useState('');
-
+  const [mostrarContrasena, setMostrarContrasena] = useState(false);
   const history = useNavigate();
 
   const handlePwd = () => {
@@ -162,13 +162,41 @@ export default function Login() {
             {showPasswordForm ? (
               <>
                 <div className={`input-container ${validPassword ? '' : 'invalid'}`}>
-                  <label className='input-label'>Ingrese su contraseña</label>
+                  <label htmlFor="password" className='input-label'>Ingrese su contraseña</label>
                   <input
-                    type='password'
+                    type={mostrarContrasena ? "password" : "text"}
                     className={`input-field ${validPassword ? 'valid' : 'invalid'}`}
                     value={password}
                     onChange={handlePasswordChange}
+                    id='password'
                   />
+                   {mostrarContrasena ? (
+                      <p 
+                        style={{
+                          textAlign: "right",
+                          margin: "0",
+                          cursor: "pointer",
+                          fontSize:'30px',
+                         color:'green'
+                        }}
+                        onClick={() => setMostrarContrasena(false)}
+                      >
+                  
+                        <ion-icon name="eye-off-outline"></ion-icon>
+                      </p>
+                    ) : (
+                      <p
+                        style={{
+                          textAlign: "right",
+                          margin: "0",
+                          cursor: "pointer",
+                          fontSize:'20px',
+                        }}
+                        onClick={() => setMostrarContrasena(true)}
+                      >
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </p>
+                    )}
                   {!validPassword && (
                     <div className='error-message'>
                       La contraseña debe contener al menos 8 caracteres

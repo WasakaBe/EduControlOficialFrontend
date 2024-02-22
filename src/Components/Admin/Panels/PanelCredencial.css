@@ -2,7 +2,7 @@
  background-color: rgb(158, 158, 154);
  width: 100%;
 height: 100vh;
-overflow-y: scroll;
+
 }
 .section-credential{
  display: flex;
